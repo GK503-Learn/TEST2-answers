@@ -1,6 +1,4 @@
-/*
-THIS CODE IS NOT FINISHED DON'T USE
-*/
+// DONE WITH QUESTION ONE
 
 package org.example;
 
@@ -18,12 +16,12 @@ public class question_one {
 
         Function<Integer, Integer> doubleNumber = (x) -> x*2;
 
-        Predicate<Integer> isEven = (x) -> x%2 == 0;
+        Predicate<Integer> isEven = (x) -> x % 2 == 0;
 
-        System.out.println(doubleList([1, 2, 3], doubleNumber));
+        System.out.println(doubleList(new int[]{1, 2, 3}, doubleNumber));
     }
 
-    public ArrayList<Integer> doubleList(int[] arrInt, Function<Integer, Integer> funcInt) {
+    public static ArrayList<Integer> doubleList(int[] arrInt, Function<Integer, Integer> funcInt) {
         ArrayList<Integer> list = new ArrayList<>();
         for(int rInt : arrInt) {
             list.add(funcInt.apply(rInt));
